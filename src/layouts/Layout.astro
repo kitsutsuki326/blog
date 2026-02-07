@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title = "Film & Journey", description = "写真と旅の記録" } = Astro.props;
+const { title = "JOURNAL", description = "写真と旅の記録" } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,7 +22,7 @@ const { title = "Film & Journey", description = "写真と旅の記録" } = Astr
     <header class="max-w-2xl mx-auto px-6 pt-16 pb-8">
       <a href="/" class="inline-block group">
         <h1 class="text-lg tracking-widest uppercase text-warm-900 group-hover:text-kodak-red transition-colors">
-          Film & Journey
+          JOURNAL
         </h1>
         <p class="text-xs tracking-wider text-warm-400 mt-1">写真と旅の記録</p>
       </a>
@@ -34,7 +34,7 @@ const { title = "Film & Journey", description = "写真と旅の記録" } = Astr
 
     <footer class="max-w-2xl mx-auto px-6 pb-16 border-t border-warm-200 pt-8">
       <p class="text-xs text-warm-400 tracking-wide">
-        &copy; {new Date().getFullYear()} Film & Journey
+        &copy; {new Date().getFullYear()} JOURNAL
       </p>
     </footer>
   </body>
