@@ -1,0 +1,41 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "Film & Journey", description = "写真と旅の記録" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-warm-50 text-warm-800 font-sans antialiased">
+    <header class="max-w-2xl mx-auto px-6 pt-16 pb-8">
+      <a href="/" class="inline-block group">
+        <h1 class="text-lg tracking-widest uppercase text-warm-900 group-hover:text-kodak-red transition-colors">
+          Film & Journey
+        </h1>
+        <p class="text-xs tracking-wider text-warm-400 mt-1">写真と旅の記録</p>
+      </a>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-6 pb-24">
+      <slot />
+    </main>
+
+    <footer class="max-w-2xl mx-auto px-6 pb-16 border-t border-warm-200 pt-8">
+      <p class="text-xs text-warm-400 tracking-wide">
+        &copy; {new Date().getFullYear()} Film & Journey
+      </p>
+    </footer>
+  </body>
+</html>

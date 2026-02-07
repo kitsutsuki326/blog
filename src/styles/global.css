@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", "Meiryo", sans-serif;
+  --font-serif: "Georgia", "Times New Roman", "Hiragino Mincho ProN",
+    "Yu Mincho", serif;
+
+  --color-warm-50: #fdfcfb;
+  --color-warm-100: #f5f0eb;
+  --color-warm-200: #e8dfd6;
+  --color-warm-300: #d4c5b5;
+  --color-warm-400: #b8a48e;
+  --color-warm-500: #9c8568;
+  --color-warm-600: #7a6650;
+  --color-warm-700: #5c4d3d;
+  --color-warm-800: #3d332a;
+  --color-warm-900: #1f1a15;
+
+  --color-kodak-red: #c4342d;
+  --color-kodak-yellow: #f5c518;
+}
